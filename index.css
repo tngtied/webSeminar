@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400');
+
+body {
+    align-items: center;
+    padding-top: 5%;
+    font-family: "Nanum Gothic Coding";
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#todo-list{
+    background-color: ivory;
+}
+
 .inactive {
     text-decoration: line-through;
+}
+
+div{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: antiquewhite;
 }

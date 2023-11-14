@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+const fs = require('fs');
 const todo_json = JSON.parse(readFileSync("todo.json"));
 
 console.log("js working, json parsed" + todo_json.stringify());
@@ -32,7 +32,7 @@ function insert_todo(){
 
     const json_obj = {};
 
-    document.getElementById('debug').innerHTML = 'insert_todo running ...' + text;
+    // document.getElementById('debug').innerHTML = 'insert_todo running ...' + text;
 
     const date_obj = new Date();
 
@@ -61,9 +61,9 @@ function insert_todo(){
 }
 
 function toggle_status(e){
-    document.getElementById('debug').innerHTML = 'toggling status... ' + e.parentElement.classList;
+    // document.getElementById('debug').innerHTML = 'toggling status... ' + e.parentElement.classList;
     if (e.parentElement.classList.contains("active")){
-        document.getElementById('debug').innerHTML += 'entered if(active)';
+        // document.getElementById('debug').innerHTML += 'entered if(active)';
         e.parentElement.classList.remove('active');
         e.parentElement.classList.add('inactive');
         e.innerHTML = "미완료";
